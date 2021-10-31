@@ -5,6 +5,9 @@ def average(nums):
 def median(nums):
     return nums[len(nums) // 2]
 
+def nums_range(nums):
+    return nums[-1] - nums[0]
+
 def mod(nums):
     dic = {}
     for i in range(len(nums)):
@@ -25,14 +28,12 @@ def mod(nums):
             eq_list.append(k)
 
 
-    eq_list = sorted(eq_list)
+
     if len(eq_list) >= 2:
+        eq_list = sorted(eq_list)
         return eq_list[1]
     return eq_list[0]
 
-
-def nums_range(nums):
-    return nums[-1] - nums[0]
 
 
 n = int(input())
